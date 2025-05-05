@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DCARTBot</title>
+</head>
+<body>
+  <h1>DCART-Bot</h1>
+  
+  <!-- <form action="/upload" method="post" enctype="multipart/form-data">
+    <h3>Upload PDF:</h3>
+    <input type="file" name="pdf" accept=".pdf">
+    <button type="submit">Upload</button>
+  </form> -->
+
+  <form action="/ask" method="post">
+    <h3>Ask a Question:</h3>
+    <input type="text" name="question" placeholder="Enter your question" required>
+    <button type="submit">Ask</button>
+  </form>
+
+  {% if answer %}
+    <h3>Answer:</h3>
+    <p>{{ answer }}</p>
+  {% endif %}
+</body>
+</html>
