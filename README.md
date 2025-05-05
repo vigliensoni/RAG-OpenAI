@@ -12,7 +12,7 @@ python3 -m venv ./venv
 source venv/bin/activate
 
 # Install the required packages. For example
-pip3 install PyPDF2 tqdm openai dotenv
+pip3 install flask PyPDF2 tqdm openai dotenv
 
 
 
